@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Music Heaven</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="1.png" type="image/x-icon">
+        </head>
+        <body>
+            <nav>
+                <ul>
+                    <li class="brand"><img src="1.png" alt="Music Heaven">Music Heaven</li>
+                    <li><a class="active" href="index.html" style="color: white;">English Songs</a></li>
+                    <li><a class="active" href="Hindi Songs.html"  style="color: white;">Hindi Songs</a></li>
+                    <li><a class="active" href="Spiritual Songs.html"  style="color: white;">Spiritual Songs</a></li>
+                </ul>
+            </nav>
+    
+    
+    
+    
+        <div class="container3">
+            <div class="songList">
+                <h1>My Favourite Hindi Songs</h1>
+                <div class="songItemContainer3">
+                    <div class="songItem3">
+                        <img src="covers/31.jpg">
+                        <span class="songName3">Tip Tip Barsa Paani</span>
+                        <span class="songlistplay"><span class="timestamp">03:00 <i id="30" class="far songItemPlay fa-play-circle"></i> </span></span>
+                    </div>
+                    <div class="songItem3">
+                        <img src="covers/32.jpg">
+                        <span class="songName3">Achha To Hum Chalte Hai - Kishor Kumar,Lata Mangeshkar</span>
+                        <span class="songlistplay"><span class="timestamp">03:09 <i id="31" class="far songItemPlay fa-play-circle"></i> </span></span>
+                    </div>
+                    <div class="songItem3">
+                        <img src="covers/33.jpg">
+                        <span class="songName3">Ajib Dastan Hai Yeh  </span>
+                        <span class="songlistplay"><span class="timestamp">03:51 <i id="32" class="far songItemPlay fa-play-circle"></i> </span></span>
+                    </div>
+                    <div class="songItem3">
+                        <img src="covers/34.jpg">
+                        <span class="songName3">Dil Jhoom - Arjit Singh</span>
+                        <span class="songlistplay"><span class="timestamp">04:20 <i id="33" class="far songItemPlay fa-play-circle"></i> </span></span>
+                    </div>
+                    <div class="songItem3">
+                        <img src="covers/35.jpg">
+                        <span class="songName3">Heeriye - Arjit Singh</span>
+                        <span class="songlistplay"><span class="timestamp">02:50 <i id="34" class="far songItemPlay fa-play-circle"></i> </span></span>
+                    </div>
+                    <div class="songItem3">
+                        <img src="covers/36.jpg">
+                        <span class="songName3">JALSA 2.0</span>
+                        <span class="songlistplay"><span class="timestamp">03:43 <i id="35" class="far songItemPlay fa-play-circle"></i> </span></span>
+                    </div>
+                    <div class="songItem3">
+                        <img src="covers/37.jpg">
+                        <span class="songName3">Mere Sapno Ki Rani </span>
+                        <span class="songlistplay"><span class="timestamp">03:56 <i id="36" class="far songItemPlay fa-play-circle"></i> </span></span>
+                    </div>
+    
+                    <div class="songItem3">
+                        <img src="covers/38.jpg">
+                        <span class="songName3">Tere Vaste </span>
+                        <span class="songlistplay"><span class="timestamp">02:49 <i id="37" class="far songItemPlay fa-play-circle"></i> </span></span>
+                    </div>
+                    <div class="songItem3">
+                        <img src="covers/39.jpg">
+                        <span class="songName3">Vande Mataram - A.R. Rahman </span>
+                        <span class="songlistplay"><span class="timestamp">02:50 <i id="38" class="far songItemPlay fa-play-circle"></i> </span></span>
+                    </div>
+                    <div class="songItem3">
+                        <img src="covers/40.jpg">
+                        <span class="songName3">Zihaal-E-Miskin - Javed Moshin </span>
+                        <span class="songlistplay"><span class="timestamp">05:02 <i id="39" class="far songItemPlay fa-play-circle"></i> </span></span>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="songBanner"></div>
+        </div>
+    
+    
+    <!--Cursor animetion-->
+        <div class="cursor"></div>
+        <div class="cursor2"></div>
+    
+        <div class="bottom">
+            <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
+            <div class="icons">
+                <!-- fontawesome icons -->
+                <i class="fas fa-3x fa-step-backward" id="previous"></i>
+                <i class="far fa-3x fa-play-circle" id="masterPlay"></i>
+                <i class="fas fa-3x fa-step-forward" id="next"></i> 
+            </div>
+            <div class="songInfo">
+                <img src="playing.gif" width="42px" alt="" id="gif"> <span id="masterSongName">Tip Tip Barsa Paani</span>
+            </div>
+        </div>
+    
+        <script>
+            var cursor = document.querySelector(".cursor");
+            var cursor2 = document.querySelector(".cursor2");
+            document.addEventListener("mousemove",function(e){
+              cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+            });
+          </script>
+    
+        <script src="script.js"></script>
+        <script src="https://kit.fontawesome.com/26504e4a1f.js" crossorigin="anonymous"></script>
+    </body>
+    </html>
+    

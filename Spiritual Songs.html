@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Music Heaven</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="1.png" type="image/x-icon">
+        </head>
+        <body>
+            <nav>
+                <ul>
+                    <li class="brand"><img src="1.png" alt="Music Heaven">Music Heaven</li>
+                    <li><a class="active" href="index.html" style="color: white;">English Songs</a></li>
+                    <li><a class="active" href="Hindi Songs.html"  style="color: white;">Hindi Songs</a></li>
+                    <li><a class="active" href="Spiritual Songs.html"  style="color: white;">Spiritual Songs</a></li>
+                </ul>
+            </nav>
+    
+    
+        <div class="container4">
+            <div class="songList">
+                <h1>Jai Shree Ram</h1>
+                <div class="songItemContainer4">
+                    <div class="songItem4">
+                        <img src="covers/49.jpg">
+                        <span class="songName4">Ram Siya Ram</span>
+                        <span class="songlistplay"><span class="timestamp">03:00 <i id="40" class="far songItemPlay fa-play-circle"></i> </span></span>
+                    </div>
+                    <div class="songItem4">
+                        <img src="covers/41.jpg">
+                        <span class="songName4">Babam Bam Bhole</span>
+                        <span class="songlistplay"><span class="timestamp">03:09 <i id="41" class="far songItemPlay fa-play-circle"></i> </span></span>
+                    </div>
+                    <div class="songItem4">
+                        <img src="covers/50.jpg">
+                        <span class="songName4">Aasman ko Chukkar Dheakha</span>
+                        <span class="songlistplay"><span class="timestamp">03:51 <i id="42" class="far songItemPlay fa-play-circle"></i> </span></span>
+                    </div>
+                    <div class="songItem4">
+                        <img src="covers/42.jpg">
+                        <span class="songName4">Bharat ka Baccha Baccha Jai Shree Ram Bolega </span>
+                        <span class="songlistplay"><span class="timestamp">04:20 <i id="43" class="far songItemPlay fa-play-circle"></i> </span></span>
+                    </div>
+                    <div class="songItem4">
+                        <img src="covers/48.jpg">
+                        <span class="songName4">Aathma Raama</span>
+                        <span class="songlistplay"><span class="timestamp">02:50 <i id="44" class="far songItemPlay fa-play-circle"></i> </span></span>
+                    </div>
+                    <div class="songItem4">
+                        <img src="covers/43.jpg">
+                        <span class="songName4">Itni Sakti Hume Dena Data</span>
+                        <span class="songlistplay"><span class="timestamp">03:43 <i id="45" class="far songItemPlay fa-play-circle"></i> </span></span>
+                    </div>
+                    <div class="songItem4">
+                        <img src="covers/44.jpg">
+                        <span class="songName4">Shri Krishna Govind Hare Murari</span>
+                        <span class="songlistplay"><span class="timestamp">03:56 <i id="46" class="far songItemPlay fa-play-circle"></i> </span></span>
+                    </div>
+    
+                    <div class="songItem4">
+                        <img src="covers/45.jpg">
+                        <span class="songName4">Mere Ghar Ram Aaye Hai</span>
+                        <span class="songlistplay"><span class="timestamp">02:49 <i id="47" class="far songItemPlay fa-play-circle"></i> </span></span>
+                    </div>
+                    <div class="songItem4">
+                        <img src="covers/46.jpg">
+                        <span class="songName4">O My Friend Ganesha</span>
+                        <span class="songlistplay"><span class="timestamp">02:50 <i id="48" class="far songItemPlay fa-play-circle"></i> </span></span>
+                    </div>
+                    <div class="songItem4">
+                        <img src="covers/47.jpg">
+                        <span class="songName4">Har Har Shambhu</span>
+                        <span class="songlistplay"><span class="timestamp">05:02 <i id="49" class="far songItemPlay fa-play-circle"></i> </span></span>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="songBanner"></div>
+        </div>
+    
+    
+    <!--Cursor animetion-->
+        <div class="cursor"></div>
+        <div class="cursor2"></div>
+    
+        <div class="bottom">
+            <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
+            <div class="icons">
+                <!-- fontawesome icons -->
+                <i class="fas fa-3x fa-step-backward" id="previous"></i>
+                <i class="far fa-3x fa-play-circle" id="masterPlay"></i>
+                <i class="fas fa-3x fa-step-forward" id="next"></i> 
+            </div>
+            <div class="songInfo">
+                <img src="playing.gif" width="42px" alt="" id="gif"> <span id="masterSongName">Ram Siya Ram</span>
+            </div>
+        </div>
+    
+        <script>
+            var cursor = document.querySelector(".cursor");
+            var cursor2 = document.querySelector(".cursor2");
+            document.addEventListener("mousemove",function(e){
+              cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+            });
+          </script>
+    
+        <script src="script.js"></script>
+        <script src="https://kit.fontawesome.com/26504e4a1f.js" crossorigin="anonymous"></script>
+    </body>
+    </html>
+    
